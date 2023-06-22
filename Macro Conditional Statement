@@ -1,0 +1,15 @@
+#include <stdio.h>
+#define papu(h)\
+if(h%2==0)\
+printf("Even");\
+else{\
+printf("Odd");\
+}
+
+int main()
+{
+    int h=3;
+    papu(h);
+
+    return 0;
+}
