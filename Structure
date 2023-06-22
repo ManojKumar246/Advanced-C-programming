@@ -1,0 +1,25 @@
+#include <stdio.h>
+#define mj \
+printf("------------------------");
+
+struct student
+{
+    char name[100];
+    int age;
+    double height;
+}o;
+void Display(struct student *ptr)
+{
+    printf("\n%s\n",ptr->name);
+    printf("%d\n",ptr->age);
+    printf("%.1lf",ptr->height);
+}
+int main()
+{
+    scanf("%s",o.name);
+    scanf("%d",&o.age);
+    scanf("%lf",&o.height);
+    mj
+    Display(&o);
+}
+
