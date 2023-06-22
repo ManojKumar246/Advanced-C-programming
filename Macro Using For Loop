@@ -1,0 +1,11 @@
+#include <stdio.h>
+#define FOR(number)\
+for(int i=1;i<=number;i++){\
+printf("%d ", i);}
+int main()
+{
+    int s=10;
+    FOR(s);
+
+    return 0;
+}
