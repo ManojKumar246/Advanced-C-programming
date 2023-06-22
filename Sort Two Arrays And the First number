@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+    int N;
+    scanf("%d",&N);
+    int arr1[N],arr2[N];
+    for(int i=0;i<N;i++)
+    {
+        scanf("%d",&arr1[i]);
+    }
+    for(int i=0;i<N;i++)
+    {
+        scanf("%d",&arr2[i]);
+    }
+    for(int i=0;i<N;i++)
+    {
+        for(int j=i+1;j<N;j++)
+        {
+            if(arr1[i]>arr1[j])
+            {
+                int temp=arr1[i];
+                arr1[i]=arr1[j];
+                arr1[j]=temp;
+            }
+            if(arr2[i]>arr2[j])
+            {
+                int temp=arr2[i];
+                arr2[i]=arr2[j];
+                arr2[j]=temp;
+            }
+        }
+    }
+ printf("%d",arr1[0]+arr2[0]);
+
+    return 0;
+}
+
