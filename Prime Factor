@@ -1,0 +1,21 @@
+#include <stdio.h>
+void primefactor(int N);
+int main()
+{
+    int N;
+    scanf("%d",&N);
+    primefactor(N);
+    return 0;
+}
+void primefactor(int N)
+{
+    int i;
+    for(int i=2;N>1;i++)
+    {
+        while(N%i==0)
+        {
+            printf("%d ",i);
+            N/=i;
+        }
+    }
+}
